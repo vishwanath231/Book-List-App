@@ -43,13 +43,13 @@ input{
     margin: 2rem 0 1rem 0;
     border-radius: 15px;
     /* display: none; */
-    height: 450px;
+    height: 547px;
 }
 .container.active{
     display: none;
 }
 .login__box{
-    margin: 100px auto;
+    margin: 140px auto;
 }
 .login__title{
     text-align: center;
@@ -101,7 +101,7 @@ input{
     margin: 2rem 0 1rem 0;
    border-radius: 15px;
    display: none;
-   height: 450px;
+   height: 547px;
 }
 .form__container.active{
     display: block;
