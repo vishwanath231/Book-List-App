@@ -19,6 +19,7 @@ const isbn = document.getElementById('isbn');
 
 
 
+// USER LOGIN 
 usernameFrom.addEventListener('submit', (e) => {
     e.preventDefault();
     const usernameValue = usernameInput.value.trim();
@@ -38,12 +39,15 @@ usernameFrom.addEventListener('submit', (e) => {
 })
 
 
+// SET ERROR MESSAGE
 function setError(input,err){
     const inputEl = input.parentElement;
     const msg = inputEl.querySelector('small');
     inputEl.classList.add('error');
     msg.innerText = err;
 }
+
+// SET SUCCESS MESSAGE
 function setSuccess(input){
     const inputEl = input.parentElement;
     inputEl.classList.add('success');
@@ -55,22 +59,27 @@ function setSuccess(input){
 }
 
 
+// RETURN LOGIN FORM THIS EVENT EXECUTE
 user__name.addEventListener('click', () => {
     window.location.reload();
 })
 
 
+// WHEN YOU CLICK THE BUTTON SHOW BOOKLIST FORM 
 add__form.addEventListener('click', () => {
     resultContainer.classList.remove('active')
     formContainer.classList.add('active')
     
 })
 
+// RETURN HOME PAGE
 returnHome.addEventListener('click', () => {
     resultContainer.classList.add('active')
     formContainer.classList.remove('active')
 })
 
+
+// BOOKLIST FROM SUBMIT EVENT
 bookForm.addEventListener('submit' , (e) => {
     e.preventDefault();
 
@@ -104,6 +113,8 @@ bookForm.addEventListener('submit' , (e) => {
     }
 })
 
+
+ // SET LOCAL STORAGE BOOKLIST VALUE
 function setStoreData(title,author,isbn){
 
     let bookObj;
@@ -128,6 +139,7 @@ function setStoreData(title,author,isbn){
 }
 
 
+// GET LOCAL STORAGE BOOKLIST VALUE
 function getDisplayData(){
 
     let bookObj;
@@ -179,9 +191,9 @@ function getDisplayData(){
 }
 getDisplayData();
 
-function deleteBook(index){
 
-    
+// DELETE TEH BOOKLIST
+function deleteBook(index){
     let bookObj;
     
     if (localStorage.getItem('books') == null) {
@@ -202,12 +214,13 @@ function deleteBook(index){
 
 
 
-
+// SET LOCAL STORAGE USERNAME
 function setStoreUsername(username){
 
     localStorage.setItem('BookUsername', username);
     getDisplayUsername();
 }
+// GET LOCAL STORAGE USERNAME
 function getDisplayUsername(){
 
     let names  = localStorage.getItem('BookUsername')
