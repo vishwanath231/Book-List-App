@@ -162,8 +162,7 @@ input{
     padding: 15px;
     border-radius: 15px;
     display: none;
-    box-shadow: rgba(152, 152, 153, 0.25) 0px 30px 60px -30px,
-    rgba(145, 145, 146, 0.25) 0px 30px 60px -30px;
+   box-shadow: rgba(49, 49, 63, 0.1) 0px 0px 16px;
 }
 .result__container.active{
     display: block;
@@ -237,7 +236,7 @@ input{
 #main{
     display: block;
     overflow: auto;
-    height: 58vh;
+    height: 59vh;
     padding: 5px;
 }
 .check{
