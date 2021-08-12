@@ -97,7 +97,7 @@ input{
 
 .form__container {
     background: linear-gradient(250deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
-   padding: 15px 15px 1rem 15px;
+   padding: 15px 15px .5rem 15px;
     margin: 2rem 0 1rem 0;
    border-radius: 15px;
    display: none;
@@ -157,7 +157,7 @@ input{
 
 
 .result__container{
-    margin: 2rem 0 1rem 0;
+    margin: 1rem 0;
     background: linear-gradient(50deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
     padding: 15px;
     border-radius: 15px;
@@ -237,7 +237,7 @@ input{
 #main{
     display: block;
     overflow: auto;
-    height: 65vh;
+    height: 55vh;
     padding: 5px;
 }
 .check{
